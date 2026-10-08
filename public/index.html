@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World！我的第一个 AI 开发的网站</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <main class="card">
+    <div class="badge">Node.js · 零依赖 · 可直接运行</div>
+
+    <!-- 主标题：名字由 JS 从服务端接口获取后填充 -->
+    <h1 class="title" id="greeting">
+      Hello World！我是<span class="name" id="owner-name">豆包</span>，我的第一个AI开发的网站
+    </h1>
+
+    <p class="subtitle">下面显示的是<strong>服务器时间</strong>，由 Node.js 服务端返回；秒数实时跳动，并每 5 秒与服务器自动校准一次。</p>
+
+    <!-- 服务器时间展示区 -->
+    <section class="clock" aria-live="polite">
+      <div class="clock-label">当前服务器时间</div>
+      <div class="clock-time" id="server-time">--:--:--</div>
+      <div class="clock-meta">
+        <span class="chip" id="server-date">加载中 ...</span>
+        <span class="chip" id="server-weekday">—</span>
+        <span class="chip" id="server-timezone">—</span>
+      </div>
+    </section>
+
+    <!-- 连接状态 -->
+    <div class="status" id="status">
+      <span class="dot" id="status-dot"></span>
+      <span id="status-text">正在连接服务器 ...</span>
+    </div>
+
+    <footer class="footer">
+      由 Node.js 内置 http 模块提供服务 · 启动时间 <span id="boot-time">—</span>
+    </footer>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+
+</html>

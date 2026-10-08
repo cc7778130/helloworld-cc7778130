@@ -1,0 +1,19 @@
+{
+  "name": "helloworld-node",
+  "version": "1.0.0",
+  "description": "Hello World 网站：显示问候语与当前服务器时间（零依赖，Node.js 内置 http 模块）",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "nodejs",
+    "helloworld",
+    "http",
+    "server-time"
+  ],
+  "license": "MIT"
+}
